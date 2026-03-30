@@ -8,13 +8,14 @@
     pkgs._1password-gui
     pkgs.gnome-secrets
     pkgs.lm_sensors
+    pkgs.mesa-demos
     pkgs.prismlauncher
     pkgs.seahorse
+    pkgs.signal-desktop
     pkgs.steam
     pkgs.tor-browser
     pkgs.ungoogled-chromium
     pkgs.vlc
-    pkgs.mesa-demos
 
     # Fonts
     pkgs.fira
