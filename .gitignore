@@ -1,0 +1,4 @@
+*.qcow*
+*.raw
+.tmp-arion-docker-*.yaml
+result
