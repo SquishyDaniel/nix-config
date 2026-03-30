@@ -6,16 +6,32 @@
 
   home.packages = [
     pkgs._1password-gui
-    pkgs.gnome-secrets
+    pkgs.signal-desktop
+    pkgs.vlc
+    pkgs.vscodium
+
+    # CLI
     pkgs.lm_sensors
     pkgs.mesa-demos
+
+    # Games
     pkgs.prismlauncher
-    pkgs.seahorse
-    pkgs.signal-desktop
     pkgs.steam
+
+    # Web
     pkgs.tor-browser
     pkgs.ungoogled-chromium
-    pkgs.vlc
+
+    # GNOME apps
+    pkgs.commit
+    pkgs.eloquent
+    pkgs.gnome-secrets
+    pkgs.seahorse
+    pkgs.turtle
+
+    # Wine
+    pkgs.wineWow64Packages.wayland
+    pkgs.bottles
 
     # Fonts
     pkgs.fira

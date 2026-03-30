@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -107,6 +107,7 @@
     ];
     packages = with pkgs; [
       firefox
+      inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
       #  thunderbird
     ];
   };
