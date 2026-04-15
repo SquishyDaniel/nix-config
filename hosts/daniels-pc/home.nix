@@ -23,8 +23,10 @@
     pkgs.mesa-demos
 
     # Games
+    pkgs.luanti
     pkgs.prismlauncher
     pkgs.steam
+    pkgs.veloren
 
     # Web
     pkgs.tor-browser
