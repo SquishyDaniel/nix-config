@@ -4,6 +4,10 @@
 {
   home.stateVersion = "23.11";
 
+  home.file.".config/molasses/update-nix/config.json" = {
+    source = ./../../config/molasses/update-nix/config.json;
+  };
+
   home.packages = [
     pkgs._1password-gui
     pkgs.signal-desktop
