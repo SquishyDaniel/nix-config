@@ -1,0 +1,8 @@
+{
+    "flake_directory_parent": "/home/danielislost/Documents/",
+    "flake_directory": "daniels-nix-config",
+    "flake_hostname": "daniels-pc",
+    "flake_source": null,
+    "impure": true,
+    "switch": true
+}

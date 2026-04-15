@@ -16,6 +16,8 @@
     "flakes"
   ];
 
+  molasses-update-nix.enable = true;
+
   services.flatpak.enable = true;
 
   hardware.graphics.enable = true;
