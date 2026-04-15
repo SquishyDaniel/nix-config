@@ -109,6 +109,7 @@
     ];
     packages = with pkgs; [
       firefox
+      python3
       inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
       #  thunderbird
     ];
