@@ -2,7 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [
@@ -75,6 +80,15 @@
   services.xserver = {
     layout = "us";
     xkbVariant = "";
+  };
+
+  xdg.terminal-exec = {
+    enable = true;
+    settings = {
+      default = [
+        "org.gnome.Console.desktop"
+      ];
+    };
   };
 
   # Enable CUPS to print documents.
