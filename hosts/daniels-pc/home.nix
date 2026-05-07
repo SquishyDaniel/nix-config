@@ -23,7 +23,6 @@
     pkgs.mesa-demos
 
     # Games
-    pkgs.luanti
     pkgs.prismlauncher
     pkgs.steam
     pkgs.veloren
