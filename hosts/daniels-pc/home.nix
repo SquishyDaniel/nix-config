@@ -4,6 +4,10 @@
 {
   home.stateVersion = "23.11";
 
+  imports = [
+    ../common/home/development/git.nix
+  ];
+
   home.file.".config/molasses/update-nix/config.json" = {
     source = ./../../config/molasses/update-nix/config.json;
   };
@@ -21,6 +25,7 @@
     # Games
     pkgs.prismlauncher
     pkgs.steam
+    pkgs.veloren
 
     # Web
     pkgs.tor-browser

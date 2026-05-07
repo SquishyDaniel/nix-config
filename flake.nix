@@ -2,7 +2,7 @@
   inputs = {
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager?ref=release-25.11";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11-small";
     nixos-conf-editor.url = "github:snowfallorg/nixos-conf-editor";
     molasses-update-nix.url = "github:MolassesLover/gnome-nix-update-indicator-extension";
   };
