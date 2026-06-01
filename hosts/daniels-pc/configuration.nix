@@ -125,6 +125,7 @@
       firefox
       python3
       inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
+      inputs.molasses-gerbil.packages.${system}.gerbil
       #  thunderbird
     ];
   };
