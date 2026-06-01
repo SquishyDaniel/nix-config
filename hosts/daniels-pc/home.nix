@@ -25,7 +25,6 @@
     # Games
     pkgs.prismlauncher
     pkgs.steam
-    pkgs.veloren
 
     # Web
     pkgs.tor-browser
