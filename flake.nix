@@ -6,6 +6,7 @@
     nixos-conf-editor.url = "github:snowfallorg/nixos-conf-editor";
     molasses-update-nix.url = "github:MolassesLover/gnome-nix-update-indicator-extension";
     molasses-gerbil.url = "github:MolassesLover/gerbil";
+    babylon-editor-nix.url = "github:MolassesLover/babylon-editor-nix";
   };
 
   outputs =
@@ -15,13 +16,14 @@
       nixos-conf-editor,
       molasses-update-nix,
       molasses-gerbil,
+      babylon-editor-nix,
       ...
     }@inputs:
     {
       nixosConfigurations = {
         daniels-pc = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-	  specialArgs.inputs = inputs;
+          specialArgs.inputs = inputs;
           modules = [
             ./hosts/daniels-pc/configuration.nix
 
@@ -32,7 +34,7 @@
               home-manager.users.danielislost = import ./hosts/daniels-pc/home.nix;
             }
 
-	    molasses-update-nix.nixosModules.molasses-update-nix
+            molasses-update-nix.nixosModules.molasses-update-nix
           ];
         };
       };
