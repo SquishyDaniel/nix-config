@@ -124,6 +124,7 @@
     packages = with pkgs; [
       firefox
       python3
+      inputs.babylon-editor-nix.packages.${system}.babylonjs-editor
       inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
       inputs.molasses-gerbil.packages.${system}.gerbil
       #  thunderbird
